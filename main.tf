@@ -1,1 +1,2 @@
 
+null_resource "test" {}
