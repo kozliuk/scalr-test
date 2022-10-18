@@ -1,3 +1,6 @@
-package terraform
+version = "v1"
 
-import input.tfrun as tfrun
+policy "test" {
+    enabled = true
+    enforcement_level = "advisory"
+}
