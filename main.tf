@@ -11,7 +11,7 @@ resource "null_resource" "test-another" {
   }
 }
 
-resource "null_resource" "test-another" {
+resource "null_resource" "test-another-2" {
   provisioner "local-exec" {
     command = "echo 'Hello world ..!'"
   }
