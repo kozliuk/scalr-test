@@ -10,7 +10,7 @@ variable "var3" {
   type = string
 }
 
-variable "test1" {
+variable "TF_VAR_test1" {
   type = string
 }
 
