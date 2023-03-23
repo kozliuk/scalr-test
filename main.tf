@@ -1,5 +1,6 @@
 variable "my_key_name" {
   type = string
+  sensitive = true
 }
 
 variable "my_key_name_2" {
@@ -12,6 +13,7 @@ variable "var3" {
 
 variable "test1" {
   type = string
+  sensitive = true
 }
 
 
