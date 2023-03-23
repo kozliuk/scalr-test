@@ -33,3 +33,9 @@ resource "null_resource" "test3" {
   }
 }
 
+resource "null_resource" "test4" {
+  provisioner "local-exec" {
+    command = "echo 'Hello world 40!'"
+  }
+}
+
