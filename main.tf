@@ -22,9 +22,4 @@ resource "null_resource" "test" {
   }
 }
 
-resource "null_resource" "test2" {
-  provisioner "local-exec" {
-    command = "echo 'Hello world 40!'"
-  }
-}
 
