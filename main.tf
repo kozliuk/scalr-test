@@ -13,7 +13,6 @@ variable "var3" {
 
 variable "test1" {
   type = string
-  sensitive = true
 }
 
 
