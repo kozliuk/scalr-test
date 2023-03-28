@@ -1,7 +1,6 @@
 variable "my_key_name" {
   type = string
   sensitive = false
-  value = "kozliuk"
   default = "1"
 }
 
