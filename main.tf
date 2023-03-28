@@ -16,14 +16,8 @@ variable "test1" {
 }
 
 
-resource "null_resource" "test" {
+resource "null_resource" "test3" {
   provisioner "local-exec" {
     command = "echo 'Hello world ${var.test1}!'"
-  }
-}
-
-resource "null_resource" "test2" {
-  provisioner "local-exec" {
-    command = "echo 'Hello world 40!'"
   }
 }
