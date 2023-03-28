@@ -14,6 +14,6 @@ resource "null_resource" "test3" {
 
 resource "null_resource" "test4" {
   provisioner "local-exec" {
-    command = "echo 'Hello world ${var.test1}!'"
+    command = "echo 'Hello world ${var.my_key_name}!'"
   }
 }
