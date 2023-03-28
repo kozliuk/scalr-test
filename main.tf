@@ -18,7 +18,7 @@ variable "test1" {
 
 resource "null_resource" "test" {
   provisioner "local-exec" {
-    command = "echo 'Hello world 40!'"
+    command = "echo 'Hello world ${test1}!'"
   }
 }
 
