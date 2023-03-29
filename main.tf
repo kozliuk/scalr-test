@@ -1,3 +1,6 @@
+variable "my_key_name" {
+  type = string
+}
 
 
 resource "null_resource" "test4" {
