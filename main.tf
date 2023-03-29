@@ -1,8 +1,3 @@
-variable "my_key_name" {
-  type = string
-  sensitive = false
-  default = "1"
-}
 
 
 resource "null_resource" "test4" {
