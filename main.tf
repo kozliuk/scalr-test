@@ -1,4 +1,5 @@
 
+variable "my_key_name" {}
 
 resource "null_resource" "test4" {
   provisioner "local-exec" {
