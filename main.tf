@@ -1,7 +1,6 @@
 variable "my_key_name" {}
 
 resource "google_compute_disk" "default" {
-  provider = kozliuk
   name  = "test-disk"
   type  = "pd-ssd"
   zone  = "us-central1-a"
