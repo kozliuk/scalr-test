@@ -1,19 +1,12 @@
 variable "my_key_name" {}
 
-resource "null_resource" "test4" {
-  provisioner "local-exec" {
-    command = "echo 'Hello world ${var.my_key_name}!'"
+resource "google_compute_disk" "default" {
+  name  = "test-disk"
+  type  = "pd-ssd"
+  zone  = "us-central1-a"
+  image = "debian-11-bullseye-v20220719"
+  labels = {
+    environment = "dev"
   }
-}
-
-resource "null_resource" "test5" {
-  provisioner "local-exec" {
-    command = "echo 'Hello world 2 ${var.my_key_name}!'"
-  }
-}
-
-resource "null_resource" "test6" {
-  provisioner "local-exec" {
-    command = "echo 'Hello world 2 ${var.my_key_name}!'"
-  }
+  physical_block_size_bytes = 4096
 }
