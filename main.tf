@@ -1,34 +1,9 @@
 variable "my_key_name" {}
 
-resource "google_compute_disk" "default" {
-  name  = "test-disk"
-  type  = "pd-ssd"
-  zone  = "us-central1-a"
-  image = "base-ubuntu1804-devel"
-  labels = {
-    environment = "dev"
-  }
-  physical_block_size_bytes = 4096
-}
+resource "google_storage_bucket" "auto-expire" {
+  name          = "no-public-access-bucket"
+  location      = "US"
+  force_destroy = true
 
-resource "google_compute_disk" "default2" {
-  name  = "test-disk-2"
-  type  = "pd-ssd"
-  zone  = "us-central1-a"
-  image = "base-ubuntu1804-devel"
-  labels = {
-    environment = "dev"
-  }
-  physical_block_size_bytes = 4096
-}
-
-resource "google_compute_disk" "default23" {
-  name  = "test-disk-23"
-  type  = "pd-ssd"
-  zone  = "us-central1-a"
-  image = "base-ubuntu1804-devel"
-  labels = {
-    environment = "dev"
-  }
-  physical_block_size_bytes = 4096
+  public_access_prevention = "enforced"
 }
