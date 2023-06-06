@@ -1,38 +1,38 @@
 variable "my_key_name" {}
 
-resource "null_resource" "dasfsdgsd" {
+resource "null_resource" "fdsfsdfsdfds" {
   provisioner "local-exec" {
     command = "echo 'Hello world ${var.my_key_name}!'"
   }
 }
 
-resource "null_resource" "gdsgsddgsdfds" {
-  provisioner "local-exec" {
-    command = "echo 'Hello world ${var.my_key_name}!'"
-  }
-}
-
-
-resource "null_resource" "csdcscsdef" {
-  provisioner "local-exec" {
-    command = "echo 'Hello world ${var.my_key_name}!'"
-  }
-}
-
-resource "null_resource" "cdscsdvsvsvsdvds" {
-  provisioner "local-exec" {
-    command = "echo 'Hello world ${var.my_key_name}!'"
-  }
-}
-
-resource "null_resource" "cdsvsvsdvcsdcsd" {
+resource "null_resource" "dasfasfasfdafa" {
   provisioner "local-exec" {
     command = "echo 'Hello world ${var.my_key_name}!'"
   }
 }
 
 
-resource "null_resource" "dscsdcsvsdvsd" {
+resource "null_resource" "dasdasdasda" {
+  provisioner "local-exec" {
+    command = "echo 'Hello world ${var.my_key_name}!'"
+  }
+}
+
+resource "null_resource" "cszzdsafasf" {
+  provisioner "local-exec" {
+    command = "echo 'Hello world ${var.my_key_name}!'"
+  }
+}
+
+resource "null_resource" "zcsdcwdszc" {
+  provisioner "local-exec" {
+    command = "echo 'Hello world ${var.my_key_name}!'"
+  }
+}
+
+
+resource "null_resource" "csdcsdvcvsdv" {
   provisioner "local-exec" {
     command = "echo 'Hello world ${var.my_key_name}!'"
   }
