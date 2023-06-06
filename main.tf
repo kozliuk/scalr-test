@@ -12,3 +12,8 @@ resource "null_resource" "test2" {
   }
 }
 
+resource "null_resource" "test3" {
+  provisioner "local-exec" {
+    command = "echo 'Hello world ${var.my_key_name}!'"
+  }
+}
