@@ -17,3 +17,9 @@ resource "null_resource" "nastya" {
     command = "echo 'Hello world ${var.my_key_name}!'"
   }
 }
+
+resource "null_resource" "keke" {
+  provisioner "local-exec" {
+    command = "echo 'Hello world ${var.my_key_name}!'"
+  }
+}
