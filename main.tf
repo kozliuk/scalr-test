@@ -24,7 +24,7 @@ resource "null_resource" "keke" {
   }
 }
 
-resource "null_resource" "azaza" {
+resource "null_resource" "kasksd" {
   provisioner "local-exec" {
     command = "echo 'Hello world ${var.my_key_name}!'"
   }
