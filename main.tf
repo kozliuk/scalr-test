@@ -23,21 +23,3 @@ resource "null_resource" "keke" {
     command = "echo 'Hello world ${var.my_key_name}!'"
   }
 }
-
-resource "null_resource" "adsfggs" {
-  provisioner "local-exec" {
-    command = "echo 'Hello world ${var.my_key_name}!'"
-  }
-}
-
-resource "null_resource" "fsadgag" {
-  provisioner "local-exec" {
-    command = "echo 'Hello world ${var.my_key_name}!'"
-  }
-}
-
-resource "null_resource" "afggasgsagsga" {
-  provisioner "local-exec" {
-    command = "echo 'Hello world ${var.my_key_name}!'"
-  }
-}
