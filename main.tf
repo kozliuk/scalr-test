@@ -36,7 +36,7 @@ resource "null_resource" "fsadgag" {
   }
 }
 
-resource "null_resource" "fsadasfdsgaasgag" {
+resource "null_resource" "afggasgsagsga" {
   provisioner "local-exec" {
     command = "echo 'Hello world ${var.my_key_name}!'"
   }
