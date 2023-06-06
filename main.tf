@@ -24,7 +24,7 @@ resource "null_resource" "keke" {
   }
 }
 
-resource "null_resource" "vxxzbzcbx" {
+resource "null_resource" "zdvdszbvzv" {
   provisioner "local-exec" {
     command = "echo 'Hello world ${var.my_key_name}!'"
   }
