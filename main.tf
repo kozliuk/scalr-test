@@ -11,3 +11,15 @@ resource "null_resource" "fsdgsdggsd" {
     command = "echo 'Hello world ${var.my_key_name}!'"
   }
 }
+
+resource "null_resource" "dsfgddsgds" {
+  provisioner "local-exec" {
+    command = "echo 'Hello world ${var.my_key_name}!'"
+  }
+}
+
+resource "null_resource" "ffsdfsgdsgsdgsdgsd" {
+  provisioner "local-exec" {
+    command = "echo 'Hello world ${var.my_key_name}!'"
+  }
+}
