@@ -1,25 +1,9 @@
 variable "my_key_name" {}
 
-resource "null_resource" "dsagfsdgsdgsd" {
+resource "null_resource" "fdsagfsgsddsagfsdgsdgsd" {
   provisioner "local-exec" {
     command = "echo 'Hello world ${var.my_key_name}!'"
   }
 }
 
-resource "null_resource" "fsdgsdggsd" {
-  provisioner "local-exec" {
-    command = "echo 'Hello world ${var.my_key_name}!'"
-  }
-}
 
-resource "null_resource" "dsfgddsgds" {
-  provisioner "local-exec" {
-    command = "echo 'Hello world ${var.my_key_name}!'"
-  }
-}
-
-resource "null_resource" "ffsdfsgdsgsdgsdgsd" {
-  provisioner "local-exec" {
-    command = "echo 'Hello world ${var.my_key_name}!'"
-  }
-}
