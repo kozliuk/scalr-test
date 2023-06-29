@@ -1,15 +1,12 @@
 variable "my_key_name" {}
 
-data "external" "my_data" {
-  program = ["python", "-c", "print('hello!')"]
-}
-
-resource "null_resource" "fdsagfsgsddsagfsdgsdgsd" {
+resource "null_resource" "my_resource" {
   triggers = {
-    test = "some-test-value"
+    timestamp = timestamp()
   }
+
   provisioner "local-exec" {
-    attribute = data.external.my_data.result.updated_attribute
+    command = "echo Resource updated"
   }
 }
 
