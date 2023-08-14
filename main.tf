@@ -6,7 +6,7 @@ resource "null_resource" "my_resource" {
   }
 
   provisioner "local-exec" {
-    command = "echo Resource updated 7"
+    command = "echo Resource updated 8"
   }
 }
 
